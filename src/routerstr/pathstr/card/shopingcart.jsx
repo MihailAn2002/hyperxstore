@@ -14,7 +14,7 @@ const Shopingcart = () => {
   const [streets , setStreet] = useState('')
   const [city , setCity] = useState('')
   const [comment , setComment] = useState('')
-  const [orderPush , setOrderErrorPush] = useState('')
+ 
   
   const [sum , setSum] = useState(0)
 
@@ -45,8 +45,8 @@ const Shopingcart = () => {
     try{
 
       const dataOrder = {
-        "firstName" : `${firstNames}`,
-        "lastName" : `${nameIn}`,
+        "firstName" : `${nameIn}`,
+        "lastName" : `${firstNames}`,
         "phone" : `${phone}`,
         "street" : `${streets}`,
         "comment": `${comment}`,
@@ -57,8 +57,8 @@ const Shopingcart = () => {
       const sendO = await axios.post('http://localhost:8080/products', dataOrder
       
       )
-      
-
+      sendO()
+      clearCart()
       console.log('Успешно отправился')
     }catch(error){
       console.log('Не удалось отправить error')
@@ -72,7 +72,7 @@ const Shopingcart = () => {
     <div className={c.m}>
       <div className={c.box_left}>
         <div className={c.box}>
-              <p>{orderPush}</p>
+          
           <div className={c.last_first_name}>
             <div>
               <p><span className={c.spano}>* </span>Имя</p>
