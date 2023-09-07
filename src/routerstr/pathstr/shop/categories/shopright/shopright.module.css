@@ -1,0 +1,140 @@
+
+.shop{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0;
+}
+.shop > div{
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px 0;
+}
+.shopright{
+    display: flex;
+    width: 60%;
+    position: relative;
+    right: 200px;
+}
+.shopright > div{
+    width: 30%;
+}
+.shopright > div > div{
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.shop_pos{
+    display: flex;
+    justify-content: end;
+    margin-top: 70px;
+}
+.shop button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    border: none;
+    background-color: #B6132C;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+}
+.shop > div > div{
+    text-align: center;
+}
+@media (max-width:1600px){
+    .shop > div > img{
+        width: 100%;
+    }
+    .shop > div {
+        width: 100%;
+    }
+    
+    .shop button {
+        height: 60px;
+    }
+    .shopright{
+      
+        right:100px;
+    }
+    .shopright > div {
+      width: 40%;
+    }
+    .shopright > div > div{
+        height:450px ;
+    }
+    
+}
+@media (max-width:1400px){
+    .shopright > div > div{
+        height:450px ;
+    }
+   
+    
+}
+@media (max-width:1200px){
+    .shop_pos{
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+    }
+    .shopright{
+        width: 80%;
+        right: auto;
+        justify-content: center;
+    }
+   
+    
+}
+@media (max-width:800px){
+    .shop{
+        width: 40%;
+    }
+    .shopright{
+        flex-wrap: wrap;
+        
+    }
+    .shop_w{
+        flex-direction:row ;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .shop_w > div{
+       width: 41%;
+       margin: 0 10px 0;
+    }
+    .shopright > div > div{
+        height:500px ;
+    }
+    
+}
+@media (max-width:540px){
+    .shop > div{
+        width: 300px;
+    } 
+    .shop {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .shopright{
+        flex-direction:column ;  
+        justify-content: center;
+        align-items: center;
+    }
+    .shop_w{
+        flex-direction: column;
+    }
+    .shop_w > div{
+      width: 300px;
+      margin-bottom: 20px;
+
+    }
+    
+}

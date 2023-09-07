@@ -1,0 +1,401 @@
+.navlink {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    height: 80px;
+    align-items: center;
+}
+
+.menu>li {
+    margin: 0 10px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.nav_color {
+    background-color: rgb(255, 255, 255);
+}
+
+.logo {
+    width: 200px;
+}
+
+.span_menu>p {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.span_menu {
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.ul_menu {
+    display: none;
+    position: absolute;
+    border: solid 1px grey;
+    top: 100px;
+    border-bottom: none;
+    margin-left: -10px;
+    background-color: white;
+}
+
+.span_menu:hover>.ul_menu {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ul_menu>li {
+    border-bottom: solid 1px grey;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.ul_menu>li>a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+.card {
+    cursor: pointer;
+    color: black;
+    font-size: 22px;
+    margin-left: 150px;
+    position: absolute;
+    right: 100px;
+}
+
+.card_open {
+    color: #B6132C;
+}
+
+.cardNext{
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 10px 10px 0;
+    overflow: hidden;
+    top: 45px;
+    right: -700px;
+    transition: right 1s ease;
+}
+.card_open .cardNext{
+    right: -90px;
+}
+
+.btn {
+    margin-bottom: 20px;
+    height: 50px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 125px;
+}
+
+.navbar_basket {
+    margin-top: 20px;
+}
+
+.navbar_basket>ul>li>button {
+    width: 130px;
+    margin-right: 20px;
+}
+
+.burger {
+    font-size: 26px;
+    display: none;
+}
+
+.burger_menu {
+    display: flex;
+    align-items: center;
+}
+
+/* search */
+.search {
+    display: flex;
+}
+
+.search>div>input {
+    padding: 10px;
+    height: 25px;
+    width: 200px;
+    font-size: 18px;
+}
+
+.search>div>input {
+    padding: 10px;
+    padding-right: 30px;
+    height: 25px;
+    width: 200px;
+    font-size: 18px;
+}
+
+.btnsearch {
+    font-size: 20px;
+    margin-left: -22px;
+    margin-bottom: -8px;
+    cursor: pointer;
+}
+
+.ul_search {
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    width: 300px;
+    max-height: 400px;
+    overflow: scroll;
+    border: solid 1px;
+    border-bottom: none;
+}
+
+.ul_search li {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px;
+}
+
+.ul_search li>a {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.p_search {
+    position: absolute;
+    top: 103px;
+
+}
+
+@media (max-width:1300px) {
+    .card {
+        right: 50px;
+    }
+    .card_open .cardNext{
+        right: -30px;
+    }
+}
+
+/* media_shopingcart navbar_menu*/
+.navbar_basket>ul {
+    height: 285px;
+    overflow: overlay;
+}
+
+.navbar_basket>ul>li {
+    height: 80px;
+    display: flex;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+
+.navbar_basket>ul>li>button {
+    position: relative;
+    right: 10px;
+}
+
+.navbar_basket>ul>li>p {
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 300px;
+}
+
+@media (max-width:1100px) {
+    .burger_menu {
+        flex-flow: row-reverse;
+    }
+
+    .card {
+        margin-right: 20px;
+    }
+
+    .media {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        right: 0;
+    }
+
+    .burger_menu:hover .media {
+        display: flex;
+    }
+
+    .menu>li {
+        background-color: white;
+        text-align: center;
+    }
+
+    .menu>li {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid;
+        margin: 0 0 0;
+    }
+
+    .ul_menu {
+        right: 199px;
+        top: -1px;
+        height: 150px;
+        width: 150px;
+        overflow: scroll;
+    }
+
+    .ul_menu>li {
+        height: 50px;
+    }
+
+    .ul_menu>li>a {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width:1000px) {
+    .card {
+        right: 10px;
+    }
+
+    .menu {
+        right: 150px;
+    }
+    
+    .card_open .cardNext{
+        right: -5px;
+    }
+}
+
+@media (max-width:700px) {
+    .btn {
+        margin-left: 75px;
+    }
+    .card {
+        position: absolute;
+        right: auto;
+        left: -100px;
+        top: 145px;
+    }
+    .navbar_basket>ul {
+        height: 230px;
+    }
+    .shop_card {
+        left: 10px;
+        top: 170px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .burger_menu {
+        margin-top: 30px;
+    }
+
+    .menu {
+        right: 10px;
+        top: 125px;
+        width: 140px;
+    }
+    .ul_menu {
+        right: 138px;
+    }
+    .navlink > a{
+        font-size:20px ;
+    }
+    .menu p{
+        font-size: 20px;
+    }
+
+    .navbar {
+        height: 115px;
+        align-items: start;
+    }
+    .search{
+        position: absolute;
+        top: 145px;
+        right: 60px;
+    }
+    .navbar_basket > ul > li {
+        font-size: 14px;
+        height: auto;
+    }
+    .cardNext{
+        width: 400px;
+        height: 400px;
+        top: 40px;
+        right: 250px;
+    }
+    .card_open .cardNext{
+        right: -350px;
+    }
+
+}
+@media(max-width:450px){
+    .menu {
+        right: 0px;
+        top: 133px;
+    }
+    .ul_menu>li>a {
+        font-size: 17px;
+    }
+    .ul_menu{
+        width: 120px;
+    }
+    .cardNext{
+        width: 300px;
+        height: 400px;
+        top: 40px;
+        right: 200px;
+    }
+    .card_open .cardNext{
+        right: -250px;
+    }
+    .btn{
+        margin-left: 25px;
+    }
+}
+@media(max-width:400px){
+    .menu {
+        top: 170px;
+    }
+    .card {
+        top: 185px;
+        margin: auto;
+        left: 40px;
+    }
+    .shop_card {       
+        top: 217px;
+        width: 250px;
+        height: 300px;
+    }
+    .search{
+        top: 190px;
+        right: 20px;
+     
+    }
+    .btn {
+        margin-left: 50px;
+        width: 200px;
+    }
+    .navbar_basket>ul {
+        height: 200px;
+    }
+}

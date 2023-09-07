@@ -1,0 +1,23 @@
+.headerfix{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.botmargin{
+    height: 100px;
+}
+@media (max-width:1000px){
+    .botmargin{
+        height: 120px;
+    }
+}
+@media (max-width:700px){
+    .botmargin{
+        height: 150px;
+    }
+}
+@media (max-width:400px){
+    .botmargin{
+        height: 195px;
+    }
+}

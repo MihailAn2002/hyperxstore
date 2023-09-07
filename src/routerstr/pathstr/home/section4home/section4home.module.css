@@ -1,0 +1,33 @@
+
+.section{
+    margin: auto;
+    width: 90%;
+    margin-top: 50px;
+}
+.slaiderflex{
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+.slaider{
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    width: 90%;
+    overflow: hidden;
+}
+.slaider > div > img{
+    width: 450px;
+    margin: 0 20px 0;
+}
+@media (max-width:700px){
+    .slaider > div > img{
+        width: 350px;
+        margin: 0 10px 0;
+    }
+}
+@media (max-width:400px){
+    .slaider > div > img{
+        width: 250px;
+        margin: 0 5px 0;
+    }
+}
